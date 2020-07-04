@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <%- include("utils/links") %>
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <%- include("utils/navbar") %>
+    <main>
+        <img src="https://www.aqseptence.com/wp-content/uploads/2017/05/WHAT-IS-ECOMMERCE-WEB-DEVELOPMENT-1.jpg"
+            alt="main-image">
+        <div class="text-container">
+            <div>
+                <h2>¿Hablamos?</h2>
+                <div class="contact-info">
+                    <div class="form">
+                        <div>
+                            <h3>Introduzca sus datos</h3>
+                            <form action="">
+                                <div class="form-container">
+                                    <input type="text" name="name" placeholder="Su nombre" required>
+                                    <input type="text" name="email" placeholder="Email de contacto" required>
+                                </div>
+                                <textarea name="message" rows="8" placeholder="¿Que necesita?" required></textarea>
+                                <button type="submit">Enviar!</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="spacer-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="mas">
+                        <h3>Más...</h3>
+                        <div class="color-palette">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mas-info-container">
+                            <h4>Correo electrónico:</h4>
+                            <a href="mailto:robertomoralesfumeroweb@gmail.com"
+                                class="text-decoration-none text-dark">robertomoralesfumeroweb@gmail.com</a>
+                        </div>
+                        <div class="mas-info-container">
+                            <h4>Número de teléfono:</h4>
+                            <a href="tel:618674030" class="text-decoration-none text-dark">618 674 030</a>
+                        </div>
+                        <div class="mas-info-container">
+                            <h4>Redes sociales:</h4>
+                            <div>
+                                <a href="https://www.linkedin.com/in/roberto-morales-fumero-5186891a8/" target="_blank"
+                                    class="text-decoration-none text-dark">
+                                    <img
+                                        src="https://logos-marcas.com/wp-content/uploads/2020/04/Linkedin-s%C3%ADmbolo.png"
+                                        alt="linkedin">
+                                </a>
+                                <a href="mailto:robertomoralesfumeroweb@gmail.com"
+                                    class="text-decoration-none text-dark">
+                                    <img
+                                        src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Gmail.png"
+                                        alt="instagram" target="_blank">
+                                </a>
+                                <a href="https://wa.me/34618674030" target="_blank" class="text-decoration-none text-dark">
+                                    <img
+                                        src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png"
+                                        alt="whatsapp">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

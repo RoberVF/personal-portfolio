@@ -1,0 +1,206 @@
+:root {
+  --pink-color: #ff006e;
+  --white-color: #edf2f4;
+  --lightblue-color: #4ecdc4;
+  --lightpurple-color: #b8bedd;
+}
+
+@media screen and (max-width: 1680px) {
+  .header-title {
+    color: yellow;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .header-title {
+    color: green;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header-title {
+    color: purple;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .header-title {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    background-position: center center;
+  }
+  header > div {
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, 10%);
+  }
+  header > div > div {
+    width: 100%;
+    padding-left: 1rem;
+  }
+  .header-title {
+    color: var(--white-color);
+    font-size: 3.3rem;
+    text-align: start;
+    width: inherit;
+    padding-left: 1rem;
+
+  }
+  .header-subtitle {
+    width: 100%;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+  }
+  .header-button-container {
+    margin-top: 1.5rem;
+  }
+  .header-button {
+    height: 2.5rem;
+    color: var(--white-color);
+    border-radius: 2px;
+    background-color: var(--pink-color);
+    padding: 0.6rem 1.3rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  /* Who */
+  .who{
+      margin-bottom: 5rem;
+  }
+  .who-main-text-container {
+    padding-left: 1rem;
+
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+  }
+  .who-main-text-container > div {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .who-main-text-container > div > h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+  .who-main-text-container > div > p {
+    padding: 0;
+    width: 95%;
+    letter-spacing: 0.3px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: black;
+  }
+  .who-background-asset-container > h3 {
+    font-size: 16rem;
+    opacity: 0.07;
+    padding: 0 0rem 1.5rem 0;
+  }
+
+  /* Skills */
+  .skills {
+    padding-left: 1rem;
+
+    height: 100vh;
+    width: 95vw;
+    margin-bottom: 10rem;
+  }
+  .skills > div:nth-of-type(1) {
+    grid-column-start: inicio;
+    grid-column-end: final;
+    grid-row-start: inicio;
+    grid-row-end: linea2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-skills-image-container {
+    grid-column-start: inicio;
+    grid-column-end: final;
+    grid-row-start: linea2;
+    grid-row-end: final;
+
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    height: 50vh;
+    margin: auto 0;
+  }
+  .main-skills-text-container {
+    padding: 0 1rem 0 0rem;
+    width: 95%;
+  }
+  .main-skills-text-container > h3{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: 300;
+  }
+
+  /* Contact */
+  .background-contact-image-container > div {
+    width: inherit;
+    left: 0%;
+    border-radius: 0px;
+    background-position: start end;
+  }
+  .text-container {
+    width: 90%;
+    top: 10%;
+    margin: 0 auto;
+    left: 6.5%;
+    transform: translate(0%, 0%);
+    background-color: white;
+    box-shadow: 0.2rem 0.2rem 0.5rem #787878;
+    border-radius: 7px;
+    height: 115%;
+  }
+  .text-container > div {
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+
+  }
+  .contact-info{
+      display: grid;
+      grid-template-columns: [inicio] 1fr [final];
+      grid-template-rows: [inicio] 1fr [linea2] 1fr [final];  
+  }
+  .form{
+    grid-column-start: inicio;
+    grid-column-end: final;
+    grid-row-start: inicio;
+    grid-row-end: linea2;
+    width: 90vw;
+  }
+  .spacer-container{
+      visibility: hidden;
+  }
+  .mas{
+      grid-column-start: inicio;
+      grid-column-end: final;
+      grid-row-start: linea2;
+      grid-row-end: final;
+      width: 90vw;
+  }
+  .asset-container > img{
+    width: 18%;
+    position: absolute;
+    top: 108%;
+    right: 10%;
+    opacity: .2;
+    transform: rotate(-135deg);
+  }
+
+}

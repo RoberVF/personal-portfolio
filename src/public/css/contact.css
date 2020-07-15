@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
-  overflow: hidden;
 }
 
 :root {
@@ -13,30 +12,49 @@
   --lightpurple-color: #b8bedd;
 }
 
-main {
+.main-contact-container {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: relative;
 }
-main > img {
+/* .main-contact-container > img {
   width: 80%;
   height: 70%;
   position: absolute;
   left: 10%;
+  border-radius: 5px;
+
+} */
+.background-contact-image-container{
+  width: inherit;
+  height: 70%;
+}
+.background-contact-image-container > div{
+  background-image: url("../img/contact-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 80%;
+  height: inherit;
+  position: absolute;
+  border-radius: 5px;
+  left: 10%;
+
 }
 .text-container {
   position: absolute;
-  height: inherit;
-  width: inherit;
-  left: 22.5%;
+  width: 60%;
   top: 15%;
+  left: 20%;
+  transform: translate(0%, 0%);
+  background-color: white;
+  box-shadow: 0.2rem 0.2rem 0.5rem #787878;
+  border-radius: 7px;
 }
 .text-container > div {
-  width: 55%;
-  height: 70%;
-  background-color: white;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
-  box-shadow: 0.2rem 0.2rem 0.5rem #787878;
 }
 .text-container > div > h2 {
   padding: 2rem 0 1.5rem 0;
@@ -129,6 +147,7 @@ main > img {
   height: 48vh;
   width: 1px;
   margin: auto 0;
+  opacity: .5;
 }
 .spacer-container > div:nth-of-type(1) {
   height: 45%;
@@ -145,25 +164,25 @@ main > img {
 }
 
 /* Color paletter */
-.color-palette {
+.contact-color-palette {
   display: flex;
   padding-left: 1rem;
-  padding-top: .2rem;
+  padding-bottom: 2rem;
 }
-.color-palette > div:nth-of-type(1) {
+.contact-color-palette > div:nth-of-type(1) {
   height: 0.3rem;
   width: 3rem;
   border-radius: 20px;
   background-color: var(--pink-color);
 }
-.color-palette > div:nth-of-type(2) {
+.contact-color-palette > div:nth-of-type(2) {
   height: 0.3rem;
   width: 2rem;
   border-radius: 20px;
   margin-left: 0.9rem;
   background-color: var(--lightblue-color);
 }
-.color-palette > div:nth-of-type(3) {
+.contact-color-palette > div:nth-of-type(3) {
   height: 0.3rem;
   width: 1rem;
   border-radius: 20px;
@@ -206,3 +225,16 @@ main > img {
     margin-left: .3rem;
 }
 
+/* Background assets */
+.asset-container{
+  width: 100%;
+  height: 100%;
+}
+.asset-container > img{
+  width: 8%;
+  position: absolute;
+  bottom: 23%;
+  right: 22%;
+  opacity: .2;
+  transform: rotate(-135deg);
+}

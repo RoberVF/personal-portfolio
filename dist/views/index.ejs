@@ -7,24 +7,51 @@
     <title>My website</title>
     <%- include("utils/links") %>
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
+<style>
+    #topBtn {
+        height: 4rem;
+        width: 4rem;
+        display: none;
+        position: fixed;
+        bottom: 1rem;
+        right: 1.2rem;
+        z-index: 99;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 180rem;
+        background-color: transparent;
+    }
+    #topBtn > img{
+        height: 55%;
+        opacity: .5;
+        width: 55%;
+    }
+</style>
+
 <body>
-    <header>
+    <header id="home" class="home">
+        <%- include("utils/navbar") %>
         <div>
-            <h1 class="header-title">Desarrollo web profesional</h1>
-            <h4 class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis
-                incidunt veritatis natus, nemo pariatur.</h4>
-            <div class="header-button-container">
-                <a href="/" class="header-button text-decoration-none text-light">Tarifas</a>
+            <div>
+                <h1 class="header-title">Professional Web Development</h1>
+                <h4 class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis
+                    incidunt veritatis natus, nemo pariatur.</h4>
+                <div class="header-button-container">
+                    <a href="#about" class="header-button text-decoration-none text-light">Let's explore!</a>
+                </div>
             </div>
         </div>
     </header>
-    <section class="who">
+    <section class="who" id="about">
         <div class="who-main-text-container">
+
             <div>
-                <h3>Quien soy</h3>
+                <h3>About me</h3>
                 <div class="color-palette">
                     <div></div>
                     <div></div>
@@ -37,44 +64,248 @@
                     distinctio cupiditate delectus alias sequi porro explicabo iure dolores.</p>
             </div>
         </div>
-        <div class="who-background-text-container">
-            <h3>Who</h3>
-        </div>
         <div class="who-background-asset-container">
             <h3>¿?</h3>
         </div>
+
     </section>
-    <section class="contact-container">
-        <div class="contact">
-            <div class="contact-main-container">
-                <div class="contact-text-container">
-                    <div>
-                        <h4>¿Hablamos?</h4>
-                        <form action="">
-                            <div class="form-container">
-                                <input type="text" name="name" placeholder="Nombre" required>
-                                <input type="text" name="email" placeholder="Email" required>
-                            </div>
-                            <textarea name="message" rows="8" placeholder="¿Que necesita?" required></textarea>
-                            <div class="buttons-container">
+    <section id="skills" class="skills">
+        <div>
+            <div class="main-skills-text-container">
+                <h3>Main Skills</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolores eaque provident assumenda
+                    dolore nisi! Sunt quos illo, explicabo impedit iusto ipsa quis vero excepturi dolorum, cum tempora
+                    atque beatae sapiente neque expedita sequi ut labore facilis aliquid? Delectus, saepe.</p>
+            </div>
+        </div>
+        <div class="main-skills-image-container">
+            <a href="https://www.arduino.cc/" target="_blank">
+                <img src="img/icons/arduino.webp" alt="arduino">
+            </a>
+            <a href="https://getbootstrap.com/" target="_blank">
+                <img src="img/icons/bootstrap.png" alt="bootstrap">
+            </a>
+            <a href="https://bulma.io/" target="_blank">
+                <img src="img/icons/bulma.png" alt="bulma">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank">
+                <img src="img/icons/css3.png" alt="css">
+            </a>
+            <a href="https://dart.dev/" target="_blank">
+                <img src="img/icons/dart.png" alt="dart">
+            </a>
+            <a href="https://flutter.dev/" target="_blank">
+                <img src="img/icons/flutter.svg" alt="flutter">
+            </a>
+            <a href="https://git-scm.com/" target="_blank">
+                <img src="img/icons/git.png" alt="git">
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <img src="img/icons/github.png" alt="github">
+            </a>
+            <a href="https://graphql.org/" target="_blank">
+                <img src="img/icons/graphql.png" alt="graphql">
+            </a>
+            <a href="https://www.heroku.com" target="_blank">
+                <img src="img/icons/heroku.png" alt="heroku">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/HTML" target="_blank">
+                <img src="img/icons/html5.png" alt="html">
+            </a>
+            <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank">
+                <img src="img/icons/javascript.png" alt="javascript">
+            </a>
+            <a href="https://materializecss.com/" target="_blank">
+                <img src="img/icons/materialize.png" alt="materialize">
+            </a>
+            <a href="https://www.mongodb.com" target="_blank">
+                <img src="img/icons/mongodb.png" alt="mongo">
+            </a>
+            <a href="https://nodejs.org" target="_blank">
+                <img src="img/icons/node.png" alt="node">
+            </a>
+            <a href="https://www.npmjs.com/" target="_blank">
+                <img src="img/icons/npm.svg" alt="npm">
+            </a>
+            <a href="https://www.postman.com/" target="_blank">
+                <img src="img/icons/postman.png" alt="postman">
+            </a>
+            <a href="https://www.python.org/" target="_blank">
+                <img src="img/icons/python.png" alt="python">
+            </a>
+            <a href="https://es.reactjs.org/" target="_blank">
+                <img src="img/icons/react.svg" alt="react">
+            </a>
+            <a href="https://www.sqlite.org/index.html" target="_blank">
+                <img src="img/icons/sqlite3.png" alt="sqlite3">
+            </a>
+            <a href="https://svelte.dev/" target="_blank">
+                <img src="img/icons/svelte.png" alt="svelte">
+            </a>
+            <a href="https://www.twilio.com/" target="_blank">
+                <img src="img/icons/twilio.png" alt="twilio">
+            </a>
+            <a href="https://www.typescriptlang.org/" target="_blank">
+                <img src="img/icons/typescript.png" alt="typescript">
+            </a>
+            <a href="https://code.visualstudio.com/" target="_blank">
+                <img src="img/icons/vsc-code.png" alt="vsc">
+            </a>
+            <a href="https://www.microsoft.com/es-es/windows" target="_blank">
+                <img src="img/icons/windows.png" alt="windows">
+            </a>
+            <a href="https://ubuntu.com/" target="_blank">
+                <img src="img/icons/ubuntu.png" alt="ubuntu">
+            </a>
+            <a href="https://developer.android.com/studio" target="_blank">
+                <img src="img/icons/android-studio.png" alt="android-studio">
+            </a>
+            <a href="https://insomnia.rest/" target="_blank">
+                <img src="img/icons/insomnia.jpg" alt="insomnia">
+            </a>
+            <a href="https://firebase.google.com/?hl=es" target="_blank">
+                <img src="img/icons/firebase.png" alt="firebase">
+            </a>
+            <a href="https://stripe.com/es" target="_blank">
+                <img src="img/icons/stripe.png" alt="stripe">
+            </a>
+            <a href="http://www.gimp.org.es/" target="_blank">
+                <img src="img/icons/gimp.png" alt="gimp">
+            </a>
+            <a href="https://www.wappalyzer.com/" target="_blank">
+                <img src="img/icons/wappalyzer.svg" alt="wappalyzer">
+            </a>
+            <a href="https://sass-lang.com/" target="_blank">
+                <img src="img/icons/sass.png" alt="sass">
+            </a>
+            <a href="https://stylus-lang.com/" target="_blank">
+                <img src="img/icons/stylus.svg" alt="stylus">
+            </a>
+            <a href="http://lesscss.org/" target="_blank">
+                <img src="img/icons/less.png" alt="less">
+            </a>
+            <a href="https://drive.google.com" target="_blank">
+                <img src="img/icons/drive.png" alt="drive">
+            </a>
+            <a href="https://gmail.gooogle.com" target="_blank">
+                <img src="img/icons/gmail.png" alt="gmail">
+            </a>
+            <a href="https://www.digitalocean.com/" target="_blank">
+                <img src="img/icons/digital-ocean.svg" alt="d-ocean">
+            </a>
+            <a href="https://www.nginx.com/" target="_blank">
+                <img src="img/icons/nginx.png" alt="nginx">
+            </a>
+            <a href="https://mariadb.com/" target="_blank">
+                <img src="img/icons/mariadb.svg" alt="mariadb">
+            </a>
+        </div>
+    </section>
+    <section class="main-contact-container" id="contact">
+        <!-- <img src="img/contact-image.jpg"
+            alt="main-image"> -->
+        <div class="background-contact-image-container">
+            <div></div>
+        </div>
+        <div class="text-container">
+            <div>
+                <h2>¿Hablamos?</h2>
+                <div class="contact-info">
+                    <div class="form">
+                        <div>
+                            <h3>Introduzca sus datos</h3>
+                            <form action="">
+                                <div class="form-container">
+                                    <input type="text" name="name" placeholder="Su nombre" required>
+                                    <input type="text" name="email" placeholder="Email de contacto" required>
+                                </div>
+                                <textarea name="message" rows="8" placeholder="¿Que necesita?" required></textarea>
                                 <button type="submit">Enviar!</button>
-                                <a href="/contact" class="text-decoration-none">Mas</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="spacer-container">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="mas">
+                        <h3>Más...</h3>
+                        <div class="contact-color-palette">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="mas-info-container">
+                            <h4>Correo electrónico:</h4>
+                            <a href="mailto:robertomoralesfumeroweb@gmail.com"
+                                class="text-decoration-none text-dark">robertomoralesfumeroweb@gmail.com</a>
+                        </div>
+                        <div class="mas-info-container">
+                            <h4>Número de teléfono:</h4>
+                            <a href="tel:618674030" class="text-decoration-none text-dark">618 674 030</a>
+                        </div>
+                        <div class="mas-info-container">
+                            <h4>Redes sociales:</h4>
+                            <div>
+                                <a href="https://www.linkedin.com/in/roberto-morales-fumero-5186891a8/" target="_blank"
+                                    class="text-decoration-none text-dark">
+                                    <img src="https://logos-marcas.com/wp-content/uploads/2020/04/Linkedin-s%C3%ADmbolo.png"
+                                        alt="linkedin">
+                                </a>
+                                <a href="mailto:robertomoralesfumeroweb@gmail.com"
+                                    class="text-decoration-none text-dark">
+                                    <img src="https://1000marcas.net/wp-content/uploads/2019/11/Logo-Gmail.png"
+                                        alt="instagram" target="_blank">
+                                </a>
+                                <a href="https://wa.me/34618674030" target="_blank"
+                                    class="text-decoration-none text-dark">
+                                    <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png"
+                                        alt="whatsapp">
+                                </a>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contact-background-container">
-            <h3>Contact</h3>
-        </div>
-        <div class="contact-background-asset-container">
-            <img src="https://cdn0.iconfinder.com/data/icons/phone-activity-glyph/64/Phone_Activity_Icon_Set_Glyph-01-512.png" alt="tel-background">
+        <div class="asset-container">
+            <img src="img/utils/phone.webp" alt="phone">
         </div>
     </section>
-    <section style="height: 100vh;">
+    <section style="height: 100vh;"></section>
 
-    </section>
+    <!-- Go to top button -->
+    <button onclick="topFunction()" id="topBtn">
+        <img src="img/utils/arrow.png" alt="top-arrow">
+    </button>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true })
+        ScrollReveal().reveal('.home', { delay: 200 })
+        ScrollReveal().reveal('.who', { delay: 500 });
+        ScrollReveal().reveal('.skills', { delay: 700 });
+        ScrollReveal().reveal('.main-contact-container', { delay: 500 });
+
+        const mybutton = document.getElementById("topBtn");
+        //Mostrar el boton
+        window.onscroll = () => { 
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+         };
+
+        //Funcionalidad del boton
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script>
 </body>
 
 </html>

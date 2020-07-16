@@ -75,7 +75,6 @@
       margin-bottom: 5rem;
   }
   .who-main-text-container {
-    padding-left: 1rem;
 
     height: inherit;
     display: flex;
@@ -109,7 +108,6 @@
 
   /* Skills */
   .skills {
-    padding-left: 1rem;
 
     height: 100vh;
     width: 95vw;
@@ -159,7 +157,7 @@
     width: 90%;
     top: 10%;
     margin: 0 auto;
-    left: 6.5%;
+    left: 3%;
     transform: translate(0%, 0%);
     background-color: white;
     box-shadow: 0.2rem 0.2rem 0.5rem #787878;
